@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { HeroSection } from "./components/section/hero";
+import { Navbar } from "./components/navbar";
+import { Service } from "./components/section/services";
+import { CategorySection } from "./components/section/categories";
+import { GlobalTrust } from "./components/section/global-trust";
+import { HiW } from "./components/section/how-it-works";
+
+import { BlogSection } from "./components/section/blog";
+import { Testimonial } from "./components/section/testimonial";
+import { GetinTouch } from "./components/section/get-in-touch";
+import { lazy } from "react";
+
+const PricingPlan = lazy(() =>
+  import("./components/section/pricing-plan").then((comp) => ({
+    default: comp.PricingPlan,
+  })),
+);
+const WhyChooseUs = lazy(() =>
+  import("./components/section/why-choose-us").then((comp) => ({
+    default: comp.WCU,
+  })),
+);
+
+const Footer = lazy(() => import("./components/footer"));
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      <HeroSection />
+      <Service />
+      <GlobalTrust />
+      <HiW />
+      <WhyChooseUs />
+      <CategorySection />
+      <BlogSection />
+      <Testimonial />
+      <PricingPlan />
+      <GetinTouch />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
