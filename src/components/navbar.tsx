@@ -13,18 +13,18 @@ export const Navbar = () => {
             key={link}
             className={cn(
               "border-b-2 border-transparent py-2.5 transition-[color,border-color]",
-              "hover:text-primary hover:border-primary",
+              "hover:border-primary hover:text-primary",
               link == "home" ? "border-black" : "text-[#121212]/40",
             )}
           >
-            <a href={`#link`}>{link[0].toUpperCase() + link.slice(1)}</a>
+            <a href={`#${link}`}>{link[0].toUpperCase() + link.slice(1)}</a>
           </li>
         ))}
       </ul>
       <div className="">
         <button
           onClick={() => alert("Getting Started")}
-          className="bg-primary hover:bg-primary/80 rounded-[0.625rem] px-8 py-4 text-lg font-semibold leading-[120%] tracking-tight text-white"
+          className="rounded-base bg-primary px-8 py-4 text-lg font-semibold leading-[120%] tracking-tight text-white hover:bg-primary/80"
         >
           Get Started
         </button>
