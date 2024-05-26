@@ -1,4 +1,4 @@
-import Logo from "@/assets/logo.svg";
+import hybrid from "/logo.svg";
 
 export function Hybrid() {
   return (
@@ -6,7 +6,7 @@ export function Hybrid() {
       href="/"
       className="flex w-fit scale-75 items-center gap-1.5 lg:scale-100"
     >
-      <img src={Logo} alt="hybrid logo" draggable={false} />
+      <img src={hybrid} alt="logo" draggable={false} />
       <span className="text-[28px] font-semibold leading-[120%] tracking-tight">
         Hybrid
       </span>
