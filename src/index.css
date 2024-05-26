@@ -18,10 +18,10 @@ body {
     color: rgb(77 82 217 / 1);
     width: fit-content;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 6px 14px;
 
     & > span {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       line-height: 120%;
       letter-spacing: -0.025em;
@@ -29,27 +29,15 @@ body {
   }
 
   .layout {
-    margin: 0 auto;
-    max-width: 1440px;
-    padding: 0 100px;
+    @apply mx-auto max-w-screen-2xl px-5 md:px-12 2xl:px-[6.25rem];
   }
 
   .title-section {
-    font-size: 56px;
-    font-weight: 600;
-    line-height: 120%;
-    letter-spacing: -0.025em;
-
-    & > span {
-      color: rgb(77 82 217 / 1);
-    }
+    @apply text-3xl font-semibold !leading-[120%] tracking-tight md:text-4xl xl:text-[3.5rem] [&>span]:text-primary;
   }
 
   .description {
-    font-size: 20px;
-    line-height: 160%;
-    letter-spacing: -0.025em;
-    color: rgb(18 18 18 / 0.4);
+    @apply text-lg leading-[160%] tracking-tight text-black/40 md:text-xl;
   }
 
   .card::after {
@@ -64,5 +52,14 @@ body {
       rgba(0, 0, 0, 0) 42%,
       rgba(0, 0, 0, 0.28) 86%
     );
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-section {
+    padding: 10px 20px;
+    & > span {
+      font-size: 18px;
+    }
   }
 }
