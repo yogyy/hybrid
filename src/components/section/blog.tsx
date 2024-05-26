@@ -21,15 +21,15 @@ export const BlogSection = () => {
         </div>
       </div>
 
-      <div className="flex w-full gap-x-5">
+      <div className="flex w-full flex-col items-center justify-center gap-x-5 lg:flex-row">
         {news.map((blog, i) => (
-          <div key={i} className="group flex-1 space-y-8">
-            <div className="h-[400px] w-full rounded-[20px] bg-[#c4c4c4]"></div>
+          <div key={i} className="group w-auto max-w-[610px] flex-1 space-y-8">
+            <div className="aspect-video w-full rounded-[20px] bg-[#c4c4c4] xl:h-[400px]"></div>
             <div className="space-y-5">
-              <p className="text-[28px] font-medium leading-[140%] tracking-tight text-black">
+              <p className="text-xl font-medium leading-[140%] tracking-tight text-black md:text-2xl lg:text-[28px]">
                 {blog}
               </p>
-              <p className="text-lg leading-[160%] tracking-tight text-black/40">
+              <p className="text-base leading-[160%] tracking-tight text-black/40 md:text-lg">
                 <span className="font-semibold text-primary">2 Mar 2023</span>,
                 by Author
               </p>

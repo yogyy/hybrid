@@ -32,23 +32,23 @@ export const Service = () => {
   ];
 
   return (
-    <div className="mx-auto flex max-w-screen-2xl flex-col items-center gap-[74px] px-[6.25rem] pt-[10rem]">
+    <div className="mx-auto flex max-w-screen-2xl flex-col items-center gap-10 px-5 pt-[10rem] md:px-12 lg:gap-[74px] 2xl:px-[6.25rem]">
       <div className="flex flex-col items-center gap-8">
         <div id="service" className="btn-section scroll-m-10">
           <span>Service</span>
         </div>
         <div className="flex flex-col items-center gap-5 text-center">
-          <h1 className="text-[3.5rem] font-semibold leading-[120%] tracking-tight">
-            Simplify Life With <span className="text-primary">Technology</span>
+          <h1 className="title-section">
+            Simplify Life With <span>Technology</span>
           </h1>
-          <p className="text-xl leading-[160%] tracking-tight text-black/40">
+          <p className="text-lg leading-[160%] tracking-tight text-black/40 md:text-xl">
             We offer a wide range of technology solutions to help businesses{" "}
             <br />
             of all sizes and industries achieve their goals
           </p>
         </div>
       </div>
-      <ul className="flex gap-5">
+      <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((service) => (
           <li
             key={service.name}
@@ -58,7 +58,7 @@ export const Service = () => {
               <img src={service.img} alt={service.name} />
             </div>
             <div className="space-y-5">
-              <p className="px-4 text-center text-[1.75rem] font-medium leading-[120%] tracking-tight">
+              <p className="px-4 text-center text-xl font-medium leading-[120%] tracking-tight md:text-[1.75rem]">
                 {service.name}
               </p>
               <p className="px-5 text-center text-sm leading-[160%] tracking-tight text-black/40">

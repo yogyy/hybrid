@@ -4,8 +4,8 @@ export const HeroSection = () => {
   return (
     <>
       <div style={{ backgroundColor: "#fafafa" }} className="pb-10">
-        <div className="mx-auto flex max-w-screen-2xl items-center justify-between p-[6.25rem]">
-          <h1 className="max-w-[715px] flex-1 text-[6.25rem] font-semibold leading-[120%] tracking-tight">
+        <div className="layout flex flex-col items-center justify-between gap-20 !py-20 md:flex-row md:gap-0 xl:!py-[6.25rem]">
+          <h1 className="max-w-[715px] flex-1 text-balance text-center text-5xl font-semibold leading-[120%] tracking-tight md:text-left md:text-6xl xl:text-[6.25rem]">
             Empowering Your <span className="text-primary">Digital</span> future
           </h1>
           <Customers />

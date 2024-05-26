@@ -17,7 +17,7 @@ const customers = [
 
 export const Customers = () => {
   return (
-    <div className="flex max-w-[25rem] flex-col items-start gap-10">
+    <div className="flex max-w-[25rem] scale-90 flex-col items-start gap-10 xl:scale-100">
       <div className="flex gap-3.5">
         <div className="flex -space-x-3">
           {customers.map((customer) => (
@@ -29,7 +29,7 @@ export const Customers = () => {
           ))}
         </div>
         <h2 className="leading-[120%} flex flex-col text-base tracking-tight">
-          <span className="text-primary text-[1.75rem] font-semibold leading-[140%]">
+          <span className="text-[1.75rem] font-semibold leading-[140%] text-primary">
             193+
           </span>
           Satisfying Customers
