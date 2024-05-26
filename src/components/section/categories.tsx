@@ -15,9 +15,9 @@ export const CategorySection = () => {
   ];
 
   return (
-    <div className="bg-[#f3f3f3] py-[7.5rem]">
-      <div className="layout space-y-16">
-        <div className="flex justify-between">
+    <div className="bg-[#f3f3f3] py-14 lg:py-[7.5rem]">
+      <div className="layout space-y-8 md:space-y-16">
+        <div className="flex flex-col justify-between gap-5 lg:flex-row">
           <div className="flex-shrink-0 space-y-5">
             <div className="btn-section">
               <span>Categories</span>
@@ -26,20 +26,20 @@ export const CategorySection = () => {
               <span>Transform</span> Ideas Into Reality.
             </h1>
           </div>
-          <p className="description max-w-[387px]">
+          <p className="description md:max-w-[387px]">
             Mi congue risus cras cras. Consequat faucibus eros sit turpis eu
             justo consectetur vestibulum id. Id quam ornare mi id purus
             facilisi. Orci.
           </p>
         </div>
 
-        <ul className="rounded-base grid grid-cols-4 gap-5 text-2xl font-medium leading-[120%] tracking-tight">
+        <ul className="grid grid-cols-2 gap-5 rounded-base text-xl font-medium leading-[120%] tracking-tight md:grid-cols-4 lg:text-2xl">
           {categories.map((category, index) => (
             <li
               onClick={() => setActive(index)}
               key={category}
               className={cn(
-                "rounded-base flex w-full items-center justify-center text-balance py-16 text-center",
+                "flex w-full items-center justify-center text-balance rounded-base py-8 text-center lg:py-16",
                 "cursor-pointer transition-colors",
                 active === index
                   ? "bg-primary text-white"

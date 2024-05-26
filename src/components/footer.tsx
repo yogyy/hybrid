@@ -2,9 +2,9 @@ import { Hybrid } from "./ui/logo";
 
 const Footer = () => {
   return (
-    <div className="bg-[#fafafa] pt-[120px]">
-      <div className="layout flex flex-col gap-20 py-10">
-        <div className="flex justify-between">
+    <div className="overflow-hidden bg-[#fafafa] pt-12 lg:pt-[120px]">
+      <div className="layout flex flex-col gap-10 py-10 lg:gap-20">
+        <div className="flex flex-col justify-between gap-10 lg:flex-row">
           <div className="flex min-w-[361px] flex-col gap-12">
             <div className="flex max-w-[275px] flex-col gap-6">
               <Hybrid />
@@ -30,7 +30,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="flex w-full max-w-[607px] justify-between">
+          <div className="flex w-full max-w-[607px] flex-wrap justify-between gap-5 self-center">
             {sections.map((section) => (
               <div key={section.title} className="flex flex-col gap-6">
                 <p className="font-semibold text-[#1c1c1c]/80">
@@ -47,12 +47,12 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-between border-t-2 border-[#1c1c1c]/10 pt-10 text-[#1c1c1c]/80">
+        <div className="flex flex-col justify-between border-t-2 border-[#1c1c1c]/10 pt-10 text-[#1c1c1c]/80 md:flex-row">
           <div className="flex gap-10">
             <a href="#privacy&policy">Privacy policy</a>
             <a href="#term-of-use">Terms of Use</a>
           </div>
-          <p>Copyright 2023 ©SocioLib</p>
+          <p className="ml-auto">Copyright 2023 ©SocioLib</p>
         </div>
       </div>
     </div>

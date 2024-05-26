@@ -37,6 +37,7 @@ function App() {
       <Testimonial />
       <PricingPlan />
       <GetinTouch />
+
       <Footer />
     </>
   );

@@ -5,9 +5,9 @@ const links = ["home", "service", "testimonial", "blog", "contact"];
 
 export const Navbar = () => {
   return (
-    <nav className="mx-auto flex max-w-screen-2xl justify-between px-[6.25rem] py-12">
+    <nav className="mx-auto flex max-w-screen-2xl justify-between px-5 py-5 md:px-12 lg:py-12 xl:px-[6.25rem]">
       <Hybrid />
-      <ul className="flex items-center gap-12 text-xl font-medium leading-[120%] tracking-tight">
+      <ul className="hidden items-center gap-6 text-base font-medium leading-[120%] tracking-tight md:flex lg:gap-12 lg:text-xl">
         {links.map((link) => (
           <li
             key={link}
@@ -21,10 +21,10 @@ export const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className="">
+      <div>
         <button
           onClick={() => alert("Getting Started")}
-          className="rounded-base bg-primary px-8 py-4 text-lg font-semibold leading-[120%] tracking-tight text-white hover:bg-primary/80"
+          className="scale-75 rounded-base bg-primary px-8 py-4 text-lg font-semibold leading-[120%] tracking-tight text-white hover:bg-primary/80 lg:scale-100"
         >
           Get Started
         </button>
