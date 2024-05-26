@@ -1,30 +1,14 @@
-# React + TypeScript + Vite
+# Hybrid
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Slicing UI design to with responsive
 
-Currently, two official plugins are available:
+## Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React.js](https://react.dev/) - JavaScript framework
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 
-## Expanding the ESLint configuration
+## Design
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[©sociolib](https://sociolib.com/)
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[Link to Design (copy of design)](<https://www.figma.com/design/4YJ2iAYQMX47Cf2DSDDA3f/Hybrid-Template-2-(Copy)?node-id=1-544&t=mmBwzWc1Uc7QW67q-0>)
