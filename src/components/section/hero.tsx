@@ -11,18 +11,15 @@ export const HeroSection = () => {
           <Customers />
         </div>
       </div>
-      <div
-        style={{ backgroundColor: "#c4c4c4", height: "698px" }}
-        className="relative flex items-end justify-center"
-      >
-        {/* <img
-          src=""
+      <div className="relative flex items-end justify-center 2xl:h-[698px]">
+        <img
+          src="https://pbs.twimg.com/media/GOTM-mAbYAAvOHh?format=webp&name=large"
           alt="YOUR IMAGE HERE"
-          className="absolute h-[51.25rem] w-[76.25rem] bg-[#c4c4c4]"
-        /> */}
-        <div className="text-primary absolute grid h-[51.25rem] w-[76.25rem] place-content-center bg-[#c4c4c4] text-[3.25rem]">
+          className="w-full 2xl:absolute 2xl:h-[51.25rem] 2xl:w-[76.25rem] 2xl:text-[3.25rem]"
+        />
+        {/* <div className="grid aspect-video w-full place-content-center bg-[#c4c4c4] text-2xl text-primary 2xl:absolute 2xl:h-[51.25rem]  2xl:w-[76.25rem] 2xl:text-[3.25rem]">
           YOUR HERO IMAGE HERE
-        </div>
+        </div> //replace this with your image */}
       </div>
     </>
   );
